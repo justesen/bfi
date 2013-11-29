@@ -1,0 +1,32 @@
+.TH bfi 1 "September 2011"
+.SH NAME
+bfi \- brainfuck interpreter
+.SH SYNOPSIS
+bfi [\fIoptions\fR] \fIfile\fR
+.SH DESCRIPTION
+bfi tries to be a simple, yet flexible brainfuck interpreter. Flexible in the sense, that implementation differences can be controlled via commandline options. The amount of memory in both positive and negative direction is only limited by your computer. The size of the memory cells is that of an integer (a C int).
+.SH OPTIONS
+.TP
+.B
+-d, --dump \fIchar\fR
+Print the memory cells' number and content (both as an integer and as a character) when \fIchar\fR is encountered. Note that special characters have to be quoted, e.g. '#'. Useful for debugging.
+.TP
+.B
+-e, --eof \fInum\fR
+When input is read via the \fB,\fR command and EOF is encountered, write \fInum\fR to the cell's content. If this option isn't set the value of the cell is unchanged on EOF.
+.TP
+.B
+-h, --help
+Display help and information.
+.TP
+.B
+-v, --version
+Display program name, version number and copyright information
+.TP
+.B
+-w, --warnings
+Print warnings.
+.SH HOMEPAGE
+http://justesen.zxq.net/src/bfi/
+.SH AUTHOR
+Mathias N. Justesen <mathias.justesen@gmail.com>
