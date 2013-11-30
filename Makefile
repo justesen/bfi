@@ -3,7 +3,7 @@ PREFIX = /usr/local
 BINPREFIX = ${PREFIX}/bin
 MANPREFIX  = ${PREFIX}/share/man
 
-VERSION = 0.2
+VERSION = 0.3
 
 CFLAGS = -Wall -std=c90 -pedantic -O3
 CC = cc
@@ -40,3 +40,6 @@ install:
 uninstall:
 	@echo removing executable file from ${BINPREFIX}
 	@rm -f ${BINPREFIX}/bfi
+	@echo removing man file from ${MANPREFIX}
+	@rm -f ${MANPREFIX}/man1/bfi.1
+

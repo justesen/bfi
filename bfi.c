@@ -14,7 +14,7 @@
 
 
 #define PRG_NAME "bfi" /* Program name */
-#define VERSION  "0.2" /* Version number */
+#define VERSION  "0.3" /* Version number */
 
 
 /* Holds user specified options */
@@ -26,7 +26,7 @@ struct conf {
 };
 
 
-/* Doubly linked list */
+/* Double linked list */
 struct node {
 	int data;          /* memory cell content */
 	int cell;          /* cell number */
